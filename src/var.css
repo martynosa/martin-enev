@@ -1,13 +1,7 @@
 :root {
-  --light: #dee2e6;
-  --dark: #212529;
-
-  --primary: #ff922b;
-
   --orange: #ff922b;
   --teal: #20c997;
   --violet: #845ef7;
 
-  --shadow: -4px 4px 0 var(--dark);
   --animation: all 0.2s ease-in-out;
 }
