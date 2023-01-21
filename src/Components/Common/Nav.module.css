@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 2.4rem;
   margin-bottom: 3.6rem;
 }
 
@@ -27,6 +28,9 @@
 .nav li img,
 .nav button img {
   height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav li a {
