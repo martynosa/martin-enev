@@ -1,11 +1,13 @@
+import classes from './Profile.module.css';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-
-import { IProfile } from '../../util/interfaces';
 import Nav from '../Common/Nav';
 import ThemeNav from '../Common/ThemeNav';
-import classes from './Profile.module.css';
+import { useColors } from '../../Colors-Context';
+import { IProfile } from '../../util/interfaces';
 
 const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
+  const { color } = useColors();
+
   const [text] = useTypewriter({
     words: [profile.name],
     loop: 3,
@@ -21,7 +23,7 @@ const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
 
           <h1 className={classes.name}>
             {text}
-            <Cursor cursorColor={'#20c997'} />
+            <Cursor cursorColor={color} />
           </h1>
 
           <h2 className={classes.question}>Who am I?</h2>

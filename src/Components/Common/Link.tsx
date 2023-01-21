@@ -1,5 +1,5 @@
-import { ICertificate, IPage, IProject } from '../../util/interfaces';
 import classes from './Link.module.css';
+import { ICertificate, IPage, IProject } from '../../util/interfaces';
 
 const Link: React.FC<{
   item: ICertificate | IProject | IPage;

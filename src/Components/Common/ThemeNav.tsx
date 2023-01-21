@@ -1,7 +1,5 @@
-import { useColors } from '../../Colors-Context';
-
 import classes from './ThemeNav.module.css';
-
+import { useColors } from '../../Colors-Context';
 import { orange, teal, violet, grape } from '../../util/colors';
 
 const ThemeNav: React.FC = () => {

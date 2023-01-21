@@ -1,9 +1,8 @@
-import { ICertificate, IProject } from '../../util/interfaces';
 import classes from './Experience.module.css';
-
+import Synopsis from './Synopsis';
 import Certificates from './Certificates';
 import Projects from './Projects';
-import Synopsis from './Synopsis';
+import { ICertificate, IProject } from '../../util/interfaces';
 
 const Experience: React.FC<{
   certificates: { softuni: ICertificate[]; udemy: ICertificate[] };

@@ -1,9 +1,7 @@
-import { useId } from 'react';
-
-import { ICertificate } from '../../util/interfaces';
 import classes from './Experience.module.css';
-
+import { useId } from 'react';
 import Link from '../Common/Link';
+import { ICertificate } from '../../util/interfaces';
 
 const Certificates: React.FC<{
   certificates: { softuni: ICertificate[]; udemy: ICertificate[] };

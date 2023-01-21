@@ -1,9 +1,7 @@
-import { useId } from 'react';
-
-import { IPage } from '../../util/interfaces';
 import classes from './Experience.module.css';
-
+import { useId } from 'react';
 import Link from '../Common/Link';
+import { IPage } from '../../util/interfaces';
 
 const Synopsis: React.FC = () => {
   const id = useId();

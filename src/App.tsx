@@ -1,8 +1,6 @@
 import './App.css';
-
 import Experience from './Components/Experience/Experience';
 import Profile from './Components/Profile/Profile';
-
 import martin from './util/martin';
 
 const App: React.FC = () => {
