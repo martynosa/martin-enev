@@ -1,4 +1,4 @@
-import { ICertificate, IProject } from '../../../interfaces';
+import { ICertificate, IProject } from '../../util/interfaces';
 import classes from './Experience.module.css';
 
 import Certificates from './Certificates';
