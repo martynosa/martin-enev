@@ -1,6 +1,6 @@
 import classes from './ThemeNav.module.css';
 import { useColors } from '../../Colors-Context';
-import { orange, teal, violet, grape } from '../../util/colors';
+import { orange, teal, violet } from '../../util/colors';
 
 const ThemeNav: React.FC = () => {
   const { changeColor, changeTheme, isDark } = useColors();
@@ -26,13 +26,6 @@ const ThemeNav: React.FC = () => {
           <button
             className={classes.violet}
             onClick={() => changeColor(violet)}
-          ></button>
-        </li>
-        <span>/</span>
-        <li>
-          <button
-            className={classes.grape}
-            onClick={() => changeColor(grape)}
           ></button>
         </li>
         <span>/</span>
