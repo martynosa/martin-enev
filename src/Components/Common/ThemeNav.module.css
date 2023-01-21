@@ -1,0 +1,45 @@
+.theme-nav {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.theme-nav ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.4rem;
+}
+
+.theme-nav span {
+  font-size: 2.4rem;
+}
+
+.theme-nav button {
+  border: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  transition: var(--animation);
+}
+
+.theme-nav button:hover {
+  transform: scale(1.2);
+}
+
+/* COLORS */
+.orange {
+  background-color: var(--orange);
+}
+
+.teal {
+  background-color: var(--teal);
+}
+
+.violet {
+  background-color: var(--violet);
+}
+
+.theme {
+  background-color: transparent;
+}

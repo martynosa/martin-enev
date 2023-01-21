@@ -1,36 +1,26 @@
 .nav {
   width: 100%;
-  list-style: none;
+  margin-bottom: 1.6rem;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 2.4rem;
-  margin-bottom: 3.6rem;
+.nav span {
+  font-size: 2.4rem;
 }
 
 .nav ul {
   list-style: none;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 2.4rem;
 }
 
 .nav li {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 0.6rem;
 }
 
-.nav li img,
-.nav button img {
+.nav li img {
   height: 2.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .nav li a {
@@ -41,40 +31,5 @@
 }
 
 .nav li a:hover {
-  color: var(--teal);
-}
-
-.nav button {
-  background-color: transparent;
-  border: none;
-}
-
-.nav button:hover {
-  animation: wiggle 2s linear infinite;
-}
-
-@keyframes wiggle {
-  0%,
-  7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-40deg);
-  }
-  20% {
-    transform: rotateZ(20deg);
-  }
-  25% {
-    transform: rotateZ(-20deg);
-  }
-  30% {
-    transform: rotateZ(10deg);
-  }
-  35% {
-    transform: rotateZ(-10deg);
-  }
-  40%,
-  100% {
-    transform: rotateZ(0);
-  }
+  color: var(--primary);
 }

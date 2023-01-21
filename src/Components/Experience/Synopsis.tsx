@@ -15,7 +15,7 @@ const Synopsis: React.FC = () => {
   return (
     <div className={classes.synopsis}>
       <h2 className={classes.title}>synopsis</h2>
-      <div className={classes.group}>
+      <div className={classes['links-group']}>
         {pages.map((p, i) => {
           return <Link item={p} key={`${i}-${id}`} newTab={false} />;
         })}

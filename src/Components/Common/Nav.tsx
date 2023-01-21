@@ -4,8 +4,6 @@ const Nav: React.FC<{ github: string; linkedIn: string }> = ({
   github,
   linkedIn,
 }) => {
-  const isDark = true;
-
   return (
     <nav className={classes.nav}>
       <ul>
@@ -15,7 +13,7 @@ const Nav: React.FC<{ github: string; linkedIn: string }> = ({
             Github
           </a>
         </li>
-
+        <span>/</span>
         <li>
           <img src="/nav-svg/linkedin.svg" alt="github" />
           <a href={linkedIn} target="_blank" rel="noreferrer">
@@ -23,10 +21,6 @@ const Nav: React.FC<{ github: string; linkedIn: string }> = ({
           </a>
         </li>
       </ul>
-      <button>
-        {isDark && <img src="/nav-svg/sun2.svg" alt="sun" />}
-        {!isDark && <img src="/nav-svg/moon2.svg" alt="moon" />}
-      </button>
     </nav>
   );
 };

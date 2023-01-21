@@ -17,7 +17,7 @@ const Certificates: React.FC<{
       <div>
         {entries.map((e, i) => {
           return (
-            <div key={`${i}-${id}`} className={classes.group}>
+            <div key={`${i}-${id}`} className={classes['links-group']}>
               <h3 className={classes.organization}>{e[0]}</h3>
               {e[1].map((c, i) => {
                 if (c.isVisible) {

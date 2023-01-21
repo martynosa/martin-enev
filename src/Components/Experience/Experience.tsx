@@ -10,7 +10,7 @@ const Experience: React.FC<{
   projects: IProject[];
 }> = ({ certificates, projects }) => {
   return (
-    <section className={classes.container}>
+    <section className={classes['experience-container']}>
       <Synopsis />
       <Certificates certificates={certificates} />
       <Projects projects={projects} />
