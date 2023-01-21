@@ -1,0 +1,25 @@
+.project {
+  max-width: 32rem;
+  padding: 0.3rem 0.6rem;
+  color: var(--dark);
+  text-decoration: none;
+  border: 2px solid var(--dark);
+  transition: var(--animation);
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project:hover {
+  background-color: var(--orange);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
