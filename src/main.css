@@ -22,11 +22,15 @@ body {
 
   background-color: var(--light);
   color: var(--dark);
+
+  /* background-color: var(--dark);
+  color: var(--light); */
 }
 
-/* for scrollbar styling */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
+  width: 1.6rem;
 }
 
 ::-webkit-scrollbar-thumb {
-} */
+  background-color: var(--orange);
+}
