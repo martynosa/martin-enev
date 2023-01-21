@@ -19,7 +19,7 @@
   letter-spacing: 4px;
 
   padding: 0.3rem 0.6rem;
-  background-color: var(--orange);
+  background-color: var(--teal);
   border: 2px solid var(--dark);
   box-shadow: var(--shadow);
   margin-bottom: 3.6rem;
@@ -38,7 +38,7 @@
   font-size: 1.8rem;
   text-transform: capitalize;
   align-self: flex-start;
-  border-bottom: 4px solid var(--orange);
+  border-bottom: 4px solid var(--teal);
   margin-bottom: 1.6rem;
 }
 

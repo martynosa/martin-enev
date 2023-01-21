@@ -19,7 +19,7 @@
 }
 
 .project:hover {
-  background-color: var(--orange);
+  background-color: var(--teal);
   box-shadow: var(--shadow);
   transform: translateY(-4px);
 }

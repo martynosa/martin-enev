@@ -19,7 +19,7 @@ const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
 
           <h1 className={classes.name}>
             {text}
-            <Cursor cursorColor={'#ff922b'} />
+            <Cursor cursorColor={'#20c997'} />
           </h1>
 
           <h2 className={classes.question}>Who am I?</h2>

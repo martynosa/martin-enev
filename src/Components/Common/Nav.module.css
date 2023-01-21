@@ -41,7 +41,7 @@
 }
 
 .nav li a:hover {
-  color: var(--orange);
+  color: var(--teal);
 }
 
 .nav button {
