@@ -2,15 +2,17 @@ import { useState, createContext, useContext, useEffect } from 'react';
 
 import { orange, light, dark } from './util/colors';
 
-const defaultVlaue: {
-  changeColor: (color: string) => void;
-  changeTheme: () => void;
-  isDark: boolean;
-} = {
-  changeColor: (color: string) => {},
-  changeTheme: () => {},
-  isDark: false,
-};
+// const defaultVlaue: {
+//   changeColor: (color: string) => void;
+//   changeTheme: () => void;
+//   isDark: boolean;
+// } = {
+//   changeColor: (color: string) => {},
+//   changeTheme: () => {},
+//   isDark: false,
+// };
+
+const defaultVlaue: {} = {};
 
 const colorsContext = createContext(defaultVlaue);
 
@@ -27,11 +29,6 @@ export const ColorsProvider: React.FC<{ children: React.ReactNode }> = ({
   const changeTheme = () => {
     setIsDark(!isDark);
   };
-
-  defaultVlaue.changeColor = changeColor;
-  defaultVlaue.changeTheme = changeTheme;
-  defaultVlaue.isDark = isDark;
-
   const value = {
     changeColor,
     changeTheme,
