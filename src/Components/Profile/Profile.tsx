@@ -1,6 +1,6 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
-import { IProfile } from '../../../interfaces';
+import { IProfile } from '../../util/interfaces';
 import Nav from '../Common/Nav';
 import ThemeNav from '../Common/ThemeNav';
 import classes from './Profile.module.css';
@@ -8,7 +8,7 @@ import classes from './Profile.module.css';
 const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
   const [text] = useTypewriter({
     words: [profile.name],
-    loop: 0,
+    loop: 3,
   });
 
   return (

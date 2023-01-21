@@ -1,8 +1,16 @@
-import { useState, createContext, useContext } from 'react';
+import { useState, createContext, useContext, useEffect } from 'react';
 
 import { orange, light, dark } from './util/colors';
 
-const defaultVlaue = {};
+const defaultVlaue: {
+  changeColor: (color: string) => void;
+  changeTheme: () => void;
+  isDark: boolean;
+} = {
+  changeColor: (color: string) => {},
+  changeTheme: () => {},
+  isDark: false,
+};
 
 const colorsContext = createContext(defaultVlaue);
 
@@ -12,21 +20,36 @@ export const ColorsProvider: React.FC<{ children: React.ReactNode }> = ({
   const [color, setColor] = useState(orange);
   const [isDark, setIsDark] = useState(false);
 
-  const bodyStyles = document.body.style;
-  // for accent color
-  bodyStyles.setProperty('--primary', color);
-  //for theme color
-  bodyStyles.setProperty('--primary-background', isDark ? dark : light);
-  bodyStyles.setProperty('--primary-text', isDark ? light : dark);
-  bodyStyles.setProperty(
-    '--shadow',
-    isDark ? `-4px 4px 0 ${color}` : `-4px 4px 0 ${dark}`
-  );
+  const changeColor = (color: string) => {
+    setColor(color);
+  };
+
+  const changeTheme = () => {
+    setIsDark(!isDark);
+  };
+
+  defaultVlaue.changeColor = changeColor;
+  defaultVlaue.changeTheme = changeTheme;
+  defaultVlaue.isDark = isDark;
 
   const value = {
-    changeColor: setColor,
-    changeTheme: setIsDark,
+    changeColor,
+    changeTheme,
+    isDark,
   };
+
+  useEffect(() => {
+    const bodyStyles = document.body.style;
+    // for accent color
+    bodyStyles.setProperty('--primary', color);
+    //for theme color
+    bodyStyles.setProperty('--primary-background', isDark ? dark : light);
+    bodyStyles.setProperty('--primary-text', isDark ? light : dark);
+    bodyStyles.setProperty(
+      '--shadow',
+      isDark ? `-4px 4px 0 ${color}` : `-4px 4px 0 ${dark}`
+    );
+  }, [color, isDark]);
 
   return (
     <colorsContext.Provider value={value}>{children}</colorsContext.Provider>
