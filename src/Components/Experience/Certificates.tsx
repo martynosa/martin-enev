@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-import { ICertificate } from '../../../interfaces';
+import { ICertificate } from '../../util/interfaces';
 import classes from './Experience.module.css';
 
 import Link from '../Common/Link';

@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-import { IPage } from '../../../interfaces';
+import { IPage } from '../../util/interfaces';
 import classes from './Experience.module.css';
 
 import Link from '../Common/Link';

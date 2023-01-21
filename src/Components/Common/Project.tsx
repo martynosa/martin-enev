@@ -1,4 +1,4 @@
-import { IProject } from '../../../interfaces';
+import { IProject } from '../../util/interfaces';
 import classes from './Project.module.css';
 
 const Project: React.FC<{ project: IProject }> = ({ project }) => {

@@ -2,17 +2,15 @@ import { useState, createContext, useContext, useEffect } from 'react';
 
 import { orange, light, dark } from './util/colors';
 
-// const defaultVlaue: {
-//   changeColor: (color: string) => void;
-//   changeTheme: () => void;
-//   isDark: boolean;
-// } = {
-//   changeColor: (color: string) => {},
-//   changeTheme: () => {},
-//   isDark: false,
-// };
-
-const defaultVlaue: {} = {};
+const defaultVlaue: {
+  changeColor: (color: string) => void;
+  changeTheme: () => void;
+  isDark: boolean;
+} = {
+  changeColor: (color: string) => {},
+  changeTheme: () => {},
+  isDark: false,
+};
 
 const colorsContext = createContext(defaultVlaue);
 

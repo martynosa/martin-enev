@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-import { IProject } from '../../../interfaces';
+import { IProject } from '../../util/interfaces';
 import classes from './Experience.module.css';
 
 import Project from '../Common/Project';
