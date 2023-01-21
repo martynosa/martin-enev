@@ -67,3 +67,9 @@
     position: unset;
   }
 }
+
+@media (max-width: 420px) {
+  .name {
+    font-size: 3.6rem;
+  }
+}

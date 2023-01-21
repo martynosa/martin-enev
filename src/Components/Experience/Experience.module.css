@@ -4,7 +4,7 @@
 
 .synopsis,
 .certificates {
-  min-height: 100vh;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -46,4 +46,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 3.6rem;
+  }
 }
