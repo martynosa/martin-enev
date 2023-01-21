@@ -1,6 +1,7 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 import { IProfile } from '../../../interfaces';
+import Nav from '../Common/Nav';
 import classes from './Profile.module.css';
 
 const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
@@ -11,6 +12,7 @@ const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
 
   return (
     <section className={classes.container}>
+      <Nav github={profile.github} linkedIn={profile.linkedIn} />
       <div className={classes.details}>
         <div className={classes.mugshot}></div>
 
