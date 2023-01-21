@@ -43,3 +43,9 @@
 .theme {
   background-color: transparent;
 }
+
+@media (max-width: 420px) {
+  .theme-nav ul {
+    justify-content: center;
+  }
+}
