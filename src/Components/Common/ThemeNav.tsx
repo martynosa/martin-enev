@@ -9,31 +9,34 @@ const ThemeNav: React.FC = () => {
     <nav className={classes['theme-nav']}>
       <ul>
         <li>
-          <button
+          <div
             className={classes.orange}
             onClick={() => changeColor(orange)}
-          ></button>
+          ></div>
         </li>
-        <span>/</span>
         <li>
-          <button
-            className={classes.teal}
-            onClick={() => changeColor(teal)}
-          ></button>
+          <span>/</span>
         </li>
-        <span>/</span>
         <li>
-          <button
+          <div className={classes.teal} onClick={() => changeColor(teal)}></div>
+        </li>
+        <li>
+          <span>/</span>
+        </li>
+        <li>
+          <div
             className={classes.violet}
             onClick={() => changeColor(violet)}
-          ></button>
+          ></div>
         </li>
-        <span>/</span>
         <li>
-          <button className={classes.theme} onClick={changeTheme}>
+          <span>/</span>
+        </li>
+        <li>
+          <div className={classes.theme} onClick={changeTheme}>
             {isDark && <img src="/nav-svg/sun2.svg" alt="sun" />}
             {!isDark && <img src="/nav-svg/moon2.svg" alt="moon" />}
-          </button>
+          </div>
         </li>
       </ul>
     </nav>

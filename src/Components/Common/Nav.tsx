@@ -13,7 +13,9 @@ const Nav: React.FC<{ github: string; linkedIn: string }> = ({
             Github
           </a>
         </li>
-        <span>/</span>
+        <li>
+          <span>/</span>
+        </li>
         <li>
           <img src="/nav-svg/linkedin.svg" alt="github" />
           <a href={linkedIn} target="_blank" rel="noreferrer">
