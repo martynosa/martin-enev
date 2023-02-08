@@ -2,7 +2,7 @@ import classes from './Profile.module.css';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Nav from '../Common/Nav';
 import ThemeNav from '../Common/ThemeNav';
-import { useColors } from '../../Colors-Context';
+import { useColors } from '../../ColorsContext';
 import { IProfile } from '../../util/interfaces';
 
 const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
