@@ -98,6 +98,12 @@ const martin: IMartin = {
       repo: 'https://github.com/martynosa/sharingan',
       isVisible: true,
     },
+    {
+      name: 'naruto-store',
+      link: 'https://naruto-store.netlify.app/',
+      repo: 'https://github.com/martynosa/naruto-store',
+      isVisible: true,
+    },
   ],
 };
 export default martin;
