@@ -12,7 +12,7 @@ const Projects: React.FC<{ projects: IProject[] }> = ({ projects }) => {
       <div className={classes.projects}>
         {projects.map((p, i) => {
           if (p.isVisible) {
-            return <Project project={p} key={`${i}-${id}`} />;
+            return <Project key={`${i}-${id}`} project={p} />;
           }
           return null;
         })}

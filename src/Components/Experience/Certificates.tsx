@@ -19,7 +19,7 @@ const Certificates: React.FC<{
               <h3 className={classes.organization}>{e[0]}</h3>
               {e[1].map((c, i) => {
                 if (c.isVisible) {
-                  return <Link item={c} key={`${i}-${id}`} newTab={true} />;
+                  return <Link key={`${i}-${id}`} item={c} newTab={true} />;
                 }
                 return null;
               })}

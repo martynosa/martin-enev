@@ -1,7 +1,9 @@
 import classes from './Project.module.css';
+import { useId } from 'react';
 import { IProject } from '../../util/interfaces';
 
 const Project: React.FC<{ project: IProject }> = ({ project }) => {
+  const id = useId();
   return (
     <a
       href={project.link}
@@ -12,8 +14,8 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
       <h3>{project.name}</h3>
       <img src={`./projects/${project.name}.jpg`} alt={project.name} />
       <div>
-        {project.techStack.map((t) => {
-          return <img src={`/tech-svg/${t}.svg`} alt={t} />;
+        {project.techStack.map((t, i) => {
+          return <img key={`${i}-${id}`} src={`/tech-svg/${t}.svg`} alt={t} />;
         })}
       </div>
     </a>
