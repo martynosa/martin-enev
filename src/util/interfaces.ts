@@ -24,6 +24,7 @@ export interface IProject {
   name: string;
   link: string;
   repo: string;
+  techStack: string[];
   isVisible: boolean;
 }
 

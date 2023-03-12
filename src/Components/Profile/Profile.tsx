@@ -70,6 +70,16 @@ const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
               src="./tech-svg/angular.svg"
               alt="angular"
             />
+            <img
+              className={classes.icon}
+              src="./tech-svg/firebase.svg"
+              alt="firebase"
+            />
+            <img
+              className={classes.icon}
+              src="./tech-svg/mongodb.svg"
+              alt="mongodb"
+            />
           </div>
         </div>
       </div>

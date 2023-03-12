@@ -11,6 +11,11 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
     >
       <h3>{project.name}</h3>
       <img src={`./projects/${project.name}.jpg`} alt={project.name} />
+      <div>
+        {project.techStack.map((t) => {
+          return <img src={`/tech-svg/${t}.svg`} alt={t} />;
+        })}
+      </div>
     </a>
   );
 };
