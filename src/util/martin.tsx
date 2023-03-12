@@ -89,7 +89,7 @@ const martin: IMartin = {
     {
       name: 'weather',
       link: 'https://martynosa-weather.netlify.app/',
-      repo: 'https://github.com/martynosa/react-weather-app',
+      repo: 'https://github.com/martynosa/weather',
       isVisible: true,
     },
     {
