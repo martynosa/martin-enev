@@ -5,7 +5,7 @@ const martin: IMartin = {
     name: 'Martin Enev',
     github: 'https://github.com/martynosa/',
     linkedIn: 'https://www.linkedin.com/in/martynosa/',
-    summary: 'Aspiring JavaScript Web Developer and a Full-time learner',
+    summary: 'Front-end developer and a Full-time learner',
   },
   certificates: {
     softuni: [
