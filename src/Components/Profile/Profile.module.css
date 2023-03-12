@@ -55,7 +55,7 @@
 .tech {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 2.4rem;
+  gap: 1.6rem;
 }
 
 .tech .icon {
