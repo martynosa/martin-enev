@@ -14,17 +14,17 @@ const martin: IMartin = {
       {
         name: 'Basics - September 2020',
         link: 'https://softuni.bg/certificates/details/89217/bead03e7',
-        isVisible: false,
+        isVisible: true,
       },
       {
         name: 'JS Fundamentals - January 2021',
         link: 'https://softuni.bg/certificates/details/103159/3995e03b',
-        isVisible: false,
+        isVisible: true,
       },
       {
         name: 'JS Applications - June 2021',
         link: 'https://softuni.bg/certificates/details/110306/843d5569',
-        isVisible: false,
+        isVisible: true,
       },
       {
         name: 'JS Advanced - May 2021',
@@ -102,7 +102,7 @@ const martin: IMartin = {
       link: 'https://martynosa-sharingan.netlify.app/',
       repo: 'https://github.com/martynosa/sharingan',
       techStack: ['html', 'css', 'javascript'],
-      isVisible: true,
+      isVisible: false,
     },
     {
       name: 'omnifood',

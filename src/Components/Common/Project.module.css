@@ -36,3 +36,13 @@
   box-shadow: var(--shadow);
   transform: translateY(-4px);
 }
+
+@media (max-width: 420px) {
+  .project h3 {
+    font-size: 1.6rem;
+  }
+
+  .project div img {
+    width: 2.4rem;
+  }
+}
