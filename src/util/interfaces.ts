@@ -9,7 +9,7 @@ export interface IMartin {
 
 export interface IProfile {
   name: string;
-  github: string;
+  gitHub: string;
   linkedIn: string;
   summary: string;
 }

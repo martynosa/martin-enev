@@ -3,11 +3,11 @@ import { IMartin } from './interfaces';
 const martin: IMartin = {
   profile: {
     name: 'Martin Enev',
-    github: 'https://github.com/martynosa/',
+    gitHub: 'https://github.com/martynosa/',
     linkedIn: 'https://www.linkedin.com/in/martynosa/',
     // summary: 'Front-end developer and a Full-time learner',
     summary:
-      "Hello! I'm Martin, a front-end developer with experience in JavaScript, TypeScript, React, and Redux. I also have experience with back-end technologies such as Node.js, Express, and MongoDB. My portfolio showcases a variety of projects that utilize different tools and frameworks, highlighting my flexibility as a developer.",
+      'Hello! I am a front-end developer with experience in JavaScript, TypeScript, React, and Redux. I also have experience with back-end technologies such as Node.js, Express, and MongoDB. My portfolio showcases a variety of projects that utilize different tools and frameworks, highlighting my flexibility as a developer.',
   },
   certificates: {
     softuni: [
