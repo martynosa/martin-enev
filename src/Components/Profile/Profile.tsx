@@ -15,7 +15,7 @@ const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
 
   return (
     <section className={classes['profile-container']}>
-      <Nav github={profile.gitHub} linkedIn={profile.linkedIn} />
+      <Nav gitHub={profile.gitHub} linkedIn={profile.linkedIn} />
       <ThemeNav />
       <div className={classes.details}>
         <div className={classes.summary}>
