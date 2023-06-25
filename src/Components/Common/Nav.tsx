@@ -1,7 +1,7 @@
 import classes from './Nav.module.css';
 
 const Nav: React.FC<{ gitHub: string; linkedIn: string }> = ({
-  github,
+  gitHub,
   linkedIn,
 }) => {
   return (
@@ -9,7 +9,7 @@ const Nav: React.FC<{ gitHub: string; linkedIn: string }> = ({
       <ul>
         <li>
           <img src="/nav-svg/github.svg" alt="github" />
-          <a href={github} target="_blank" rel="noreferrer">
+          <a href={gitHub} target="_blank" rel="noreferrer">
             GitHub
           </a>
         </li>
