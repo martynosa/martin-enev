@@ -73,6 +73,11 @@ const martin: IMartin = {
         link: 'https://www.udemy.com/certificate/UC-5d7fbbc3-20a7-4079-a2d8-1d0608f0d3a8/',
         isVisible: true,
       },
+      {
+        name: 'Complete Angular Developer in 2023: Zero to Mastery',
+        link: 'https://www.udemy.com/certificate/UC-02b548b5-a19e-419f-8daa-9d947f1e1a7f/',
+        isVisible: true,
+      },
     ],
   },
   projects: [
