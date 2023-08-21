@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 @import url(var.css);
 
 * {
@@ -17,10 +17,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
+
+  color: var(--primary-text);
 
   background-color: var(--primary-background);
-  color: var(--primary-text);
+}
+
+svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10rem;
+  height: 10rem;
 }
 
 ::-webkit-scrollbar {

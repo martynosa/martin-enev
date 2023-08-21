@@ -1,19 +1,21 @@
-import classes from './Experience.module.css';
-import { useId } from 'react';
-import Link from '../Common/Link';
-import { IPage } from '../../util/interfaces';
+import classes from "./Experience.module.css";
+import { useId } from "react";
+import Link from "../Common/Link";
+import { IPage } from "../../util/interfaces";
+import { hashtagSVG } from "../../util/svg";
 
 const Synopsis: React.FC = () => {
   const id = useId();
 
   const pages: IPage[] = [
-    { name: 'Certificates', link: '#certificates' },
-    { name: 'Projects', link: '#projects' },
+    { name: "Certificates", link: "#certificates" },
+    { name: "Projects", link: "#projects" },
   ];
   return (
     <div className={classes.synopsis}>
+      {hashtagSVG}
       <h2 className={classes.title}>synopsis</h2>
-      <div className={classes['links-group']}>
+      <div className={classes["links-group"]}>
         {pages.map((p, i) => {
           return <Link key={`${i}-${id}`} item={p} newTab={false} />;
         })}

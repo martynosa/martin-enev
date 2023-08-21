@@ -3,13 +3,23 @@
 }
 
 .synopsis,
-.certificates {
+.certificates,
+.projects {
   min-height: 100vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* for svg positioning */
+  position: relative;
+}
+
+.projects > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
 }
 
 .title {
@@ -40,12 +50,6 @@
   align-self: flex-start;
   border-bottom: 4px solid var(--primary);
   margin-bottom: 1.6rem;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
 }
 
 @media (max-width: 420px) {
