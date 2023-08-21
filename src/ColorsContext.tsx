@@ -1,5 +1,5 @@
-import { useState, createContext, useContext, useEffect } from 'react';
-import { orange, light, dark } from './util/colors';
+import { useState, createContext, useContext, useEffect } from "react";
+import { orange, light, dark } from "./util/colors";
 
 const defaultVlaue: {
   changeColor: (color: string) => void;
@@ -19,7 +19,9 @@ export const ColorsProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [color, setColor] = useState(orange);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
 
   const changeColor = (color: string) => {
     setColor(color);
@@ -38,12 +40,12 @@ export const ColorsProvider: React.FC<{ children: React.ReactNode }> = ({
   useEffect(() => {
     const bodyStyles = document.body.style;
     // for accent color
-    bodyStyles.setProperty('--primary', color);
+    bodyStyles.setProperty("--primary", color);
     //for theme color
-    bodyStyles.setProperty('--primary-background', isDark ? dark : light);
-    bodyStyles.setProperty('--primary-text', isDark ? light : dark);
+    bodyStyles.setProperty("--primary-background", isDark ? dark : light);
+    bodyStyles.setProperty("--primary-text", isDark ? light : dark);
     bodyStyles.setProperty(
-      '--shadow',
+      "--shadow",
       isDark ? `-4px 4px 0 ${color}` : `-4px 4px 0 ${dark}`
     );
   }, [color, isDark]);
