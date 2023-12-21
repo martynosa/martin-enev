@@ -15,3 +15,14 @@
   box-shadow: var(--shadow);
   transform: translateY(-4px);
 }
+
+.featured {
+  position: relative;
+}
+
+.featured::after {
+  content: "❤️";
+  position: absolute;
+  bottom: 90%;
+  right: -13px;
+}

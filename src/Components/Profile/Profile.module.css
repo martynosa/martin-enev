@@ -71,13 +71,11 @@
   padding: 0.2rem 0.4rem;
   background-color: var(--primary);
   border: 2px solid var(--primary-text);
-
   position: absolute;
   z-index: 1;
   bottom: 120%;
   left: 50%;
   transform: translateX(-50%);
-
   opacity: 0;
   transition: var(--animation);
 }

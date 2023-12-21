@@ -18,6 +18,7 @@ export interface ICertificate {
   name: string;
   link: string;
   isVisible: boolean;
+  isFeatured: boolean;
 }
 
 export interface IProject {
