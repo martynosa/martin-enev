@@ -60,7 +60,30 @@
 }
 
 .tech .icon {
+  position: relative; /* tooltip */
   width: 3.6rem;
+}
+
+.tech .icon .tooltip {
+  visibility: hidden;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  background-color: var(--primary);
+  border: 2px solid var(--primary-text);
+
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 42px;
+
+  opacity: 0;
+  transition: var(--animation);
+}
+
+.tech .icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 900px) {
