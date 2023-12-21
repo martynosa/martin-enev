@@ -56,6 +56,11 @@ const martin: IMartin = {
         link: "https://softuni.bg/certificates/details/193651/817b4fd2",
         isVisible: true,
       },
+      {
+        name: "JS Web Developer",
+        link: "https://softuni.bg/certificates/details/199366/95f95907",
+        isVisible: true,
+      },
     ],
     udemy: [
       {
