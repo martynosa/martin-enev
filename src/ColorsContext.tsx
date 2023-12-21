@@ -41,7 +41,7 @@ export const ColorsProvider: React.FC<{ children: React.ReactNode }> = ({
     const bodyStyles = document.body.style;
     // for accent color
     bodyStyles.setProperty("--primary", color);
-    //for theme color
+    // for theme color
     bodyStyles.setProperty("--primary-background", isDark ? dark : light);
     bodyStyles.setProperty("--primary-text", isDark ? light : dark);
     bodyStyles.setProperty(
