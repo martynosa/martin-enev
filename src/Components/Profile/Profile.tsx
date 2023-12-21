@@ -30,7 +30,7 @@ const Profile: React.FC<{ profile: IProfile }> = ({ profile }) => {
           <p className={classes.answer}>{profile.summary}</p>
         </div>
         <div className={classes.stack}>
-          <h2 className={classes.question}>Tech stack?</h2>
+          <h2 className={classes.question}>Tech I use?</h2>
           <div className={classes.tech}>
             <div className={classes.icon}>
               <img src="/tech-svg/html.svg" alt="html" />
